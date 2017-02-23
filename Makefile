@@ -10,7 +10,7 @@ CC=g++
 all: kkheap_mp
 
 kkheap_mp: kkheap_mp.cpp
-	$(CC) -std=c++11 kkheap_mp.cpp -lgmpxx -lgmp -o kkheap_mp
+	$(CC) -std=c++11 -O2 kkheap_mp.cpp -lgmpxx -lgmp -o kkheap_mp
 
 clean:
 	rm -f kkheap_mp *~
