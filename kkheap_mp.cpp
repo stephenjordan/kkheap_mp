@@ -34,8 +34,6 @@ int main(int argc, char *argv[]) {
   }
   N = atoi(argv[1]);
   bits = atoi(argv[2]);
-  //N = 10000;
-  //bits = 60;
   cout << "N = " << N << endl;
   cout << "bits = " << bits << endl;
   mpz_init(randval);
@@ -50,9 +48,6 @@ int main(int argc, char *argv[]) {
     classrand =  mpz_class (randval);
     v1.push_back(classrand);
   }
-  //cout << "RAND_MAX = " << RAND_MAX << endl; 
-  //cout << "N = " << v1.size() << endl;
-  //cout << "MAX = " << MAX << endl;
   // Converting vector into a heap
   // using make_heap()
   make_heap(v1.begin(), v1.end());
@@ -78,13 +73,3 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
-
-/*int main (void) {
-  mpz_class a, b, c;
-  a = 1234;
-  b = "-5678";
-  c = a+b;
-  cout << "sum is " << c << "\n";
-  cout << "absolute value is " << abs(c) << "\n";
-  return 0;
-}*/
