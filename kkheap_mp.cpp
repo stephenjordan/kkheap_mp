@@ -20,18 +20,21 @@ void printvec(vector<mpz_class> v) {
 }
 
 int main(int argc, char *argv[]) {
-  int i;                 //a counter variable
-  mpz_class a, b;        //will store the biggest two numbers
-  int N;                 //how many numbers there are
-  int bits;              //how many bits each number has
-  gmp_randstate_t state; //the internal state of the multiprecision rng
-  mpz_t randval;         //straight from the rng
-  mpz_t seed;            //the seed for the rng
-  mpz_class classrand;   //converted to C++ style
+  int i;                  //a counter variable
+  mpz_class a, b;         //will store the biggest two numbers
+  int N;                  //how many numbers there are
+  int bits;               //how many bits each number has
+  gmp_randstate_t state;  //the internal state of the multiprecision rng
+  mpz_t randval;          //straight from the rng
+  mpz_t seed;             //the seed for the rng
+  mpz_class classrand;    //converted to C++ style
+  clock_t beginning, end; //for timing
+  double time_spent;      //for timing
   if(argc != 3) {
     cout << "Usage: kkheap_mp N BITS" << endl;
     return 0;
   }
+  beginning = clock();
   N = atoi(argv[1]);
   bits = atoi(argv[2]);
   cout << "N = " << N << endl;
@@ -70,6 +73,9 @@ int main(int argc, char *argv[]) {
   printvec(v1);
   mpz_clear(randval);
   mpz_clear(seed);
+  end = clock();
+  time_spent = (double)(end-beginning)/CLOCKS_PER_SEC;
+  cout << "Walltime: " << time_spent << " seconds" << endl;
   return 0;
 }
 

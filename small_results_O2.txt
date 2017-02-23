@@ -1,0 +1,20 @@
+N = 5000000
+bits = 200
+Result: 
+1 
+Walltime: 14.26 seconds
+N = 5000000
+bits = 200
+Result: 
+1 
+Walltime: 13.62 seconds
+N = 10000000
+bits = 200
+Result: 
+0 
+Walltime: 30.6 seconds
+N = 10000000
+bits = 200
+Result: 
+0 
+Walltime: 31.01 seconds
