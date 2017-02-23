@@ -1,0 +1,8 @@
+./kkheap_mp 100000000 350
+./kkheap_mp 100000000 350
+./kkheap_mp 200000000 350
+./kkheap_mp 200000000 350
+./kkheap_mp 400000000 350
+./kkheap_mp 400000000 350
+./kkheap_mp 800000000 350
+./kkheap_mp 800000000 350
