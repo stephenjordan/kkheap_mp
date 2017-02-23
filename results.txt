@@ -1,0 +1,148 @@
+bash-4.2$ ./kkheap_mp3 100000 100
+N = 100000
+bits = 100
+Result: 
+0 
+bash-4.2$ ./kkheap_mp3 100000 100
+N = 100000
+bits = 100
+Result: 
+1 
+bash-4.2$ ./kkheap_mp3 100000 100
+N = 100000
+bits = 100
+Result: 
+0 
+bash-4.2$ ./kkheap_mp3 100000 150
+N = 100000
+bits = 150
+Result: 
+28563888 
+bash-4.2$ ./kkheap_mp3 100000 150
+N = 100000
+bits = 150
+Result: 
+4422967 
+bash-4.2$ ./kkheap_mp3 100000 150
+N = 100000
+bits = 150
+Result: 
+15804026 
+bash-4.2$ ./kkheap_mp3 500000 150
+N = 500000
+bits = 150
+Result: 
+1 
+bash-4.2$ ./kkheap_mp3 500000 150
+N = 500000
+bits = 150
+Result: 
+0 
+bash-4.2$ ./kkheap_mp3 500000 150
+N = 500000
+bits = 150
+Result: 
+0 
+bash-4.2$ ./kkheap_mp3 500000 200
+N = 500000
+bits = 200
+Result: 
+80135873856 
+bash-4.2$ ./kkheap_mp3 500000 200
+N = 500000
+bits = 200
+Result: 
+8669592232 
+bash-4.2$ ./kkheap_mp3 1000000 200
+N = 1000000
+bits = 200
+Result: 
+100540 
+bash-4.2$ ./kkheap_mp3 1000000 200
+N = 1000000
+bits = 200
+Result: 
+73541 
+bash-4.2$ ./kkheap_mp3 5000000 200
+N = 5000000
+bits = 200
+Result: 
+0 
+bash-4.2$ ./kkheap_mp3 5000000 200
+N = 5000000
+bits = 200
+Result: 
+0 
+bash-4.2$ ./kkheap_mp3 5000000 250
+N = 5000000
+bits = 250
+Result: 
+4817667 
+bash-4.2$ ./kkheap_mp3 10000000 250
+N = 10000000
+bits = 250
+Result: 
+1 
+bash-4.2$ ./kkheap_mp3 10000000 250
+N = 10000000
+bits = 250
+Result: 
+5 
+bash-4.2$ time ./kkheap_mp3 10000000 250
+N = 10000000
+bits = 250
+Result: 
+4 
+
+real	1m17.301s
+user	1m16.719s
+sys	0m0.579s
+bash-4.2$ time ./kkheap_mp3 20000000 250
+N = 20000000
+bits = 250
+Result: 
+1 
+
+real	2m58.601s
+user	2m57.594s
+sys	0m0.998s
+bash-4.2$ time ./kkheap_mp3 20000000 300
+N = 20000000
+bits = 300
+Result: 
+
+9655780259 
+
+real	2m56.895s
+user	2m56.087s
+sys	0m0.802s
+bash-4.2$ 
+bash-4.2$ time ./kkheap_mp3 50000000 300
+N = 50000000
+bits = 300
+Result: 
+1 
+
+real	8m47.769s
+user	8m46.000s
+sys	0m1.761s
+bash-4.2$ time ./kkheap_mp3 50000000 350
+N = 50000000
+bits = 350
+Result: 
+302366764813536 
+
+real	9m15.434s
+user	9m13.215s
+sys	0m2.207s
+bash-4.2$ time ./kkheap_mp3 100000000 350
+N = 100000000
+bits = 350
+Result: 
+22606387 
+[1]+  Done                    emacs kkheap_mp2.cpp
+
+real	21m37.809s
+user	21m44.197s
+sys	0m6.198s
+bash-4.2$ 
