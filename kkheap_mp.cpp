@@ -41,6 +41,7 @@ int main(int argc, char *argv[]) {
   cout << "bits = " << bits << endl;
   mpz_init(randval);
   mpz_init_set_ui(seed, (unsigned long int)time(NULL));
+  gmp_printf ("seed = %Zd\n", seed);
   gmp_randinit_default(state);
   gmp_randseed(state, seed);
   // Initializing a vector
@@ -69,7 +70,7 @@ int main(int argc, char *argv[]) {
     //printvec(v1);
   }
 
-  cout << "Result: " << endl;
+  cout << "Result = ";
   printvec(v1);
   mpz_clear(randval);
   mpz_clear(seed);
